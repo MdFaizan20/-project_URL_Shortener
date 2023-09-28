@@ -94,7 +94,7 @@ const redirectToLongUrl = async function (req, res) {
     try {
         const urlCode = req.params.urlCode
       
-       // finding longUrl in cache through urlCode
+       // Here finding  longUrl in cache through urlCode
         let cachedUrlData = await GET_ASYNC(`${urlCode}`)
 
         if (cachedUrlData) {
